@@ -1,8 +1,9 @@
 /**
  * ngUIAlert.js
  * 
- * @version 1.0.0
+ * @version 1.0.1
  * @service UIAlert
+ * @author Fábio Nogueira <fabio.bacabal@gmail.com>
  * @dependecies ngAnimate
  * @description 
  *      Permite exibir mensagens elegantes na tela.
@@ -24,7 +25,6 @@
  *      });
  *      
  */
-
 
 (function(){
     var alertInstances = {}, UIAlertService,

@@ -9,3 +9,5 @@ button{display:block;margin-bottom:10px;}
 section{font-family:monospace;background:#eaeaea;padding:10px;margin:10px;border-radius:4px;}
 section td{padding:4px}
 
+
+.alert-success .btn{color:rgba(255,255,255, 0.84)!important}

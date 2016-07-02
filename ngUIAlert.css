@@ -11,6 +11,9 @@
     background:#000000;
     color:#fff;
 }
+.ui-alert-text{
+    padding:10px 2px;
+}
 .ui-alert-buttons{
     text-align:center;
 }
