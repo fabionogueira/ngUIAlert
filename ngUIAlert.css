@@ -1,0 +1,35 @@
+.ui-alert{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    padding:20px;
+}
+.ui-alert-content{
+    padding:10px 20px;
+    background:#000000;
+    color:#fff;
+}
+
+[ui-alert-order="0"]{}
+
+/* animação do background */
+.ui-alert {
+  opacity:1;
+  display:block;
+  transition:opacity 400ms;
+}
+.ui-alert-hide{
+    opacity:0;
+}
+
+/* animação do alert */
+.ui-alert-content{
+    transition:transform cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+    transform:translate3d(0, 100px, 0);
+}
+.ui-alert-hide .ui-alert-content{
+    transform:translate3d(0, -100px, 0);
+}
+
