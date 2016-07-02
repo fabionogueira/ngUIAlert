@@ -11,6 +11,14 @@
     background:#000000;
     color:#fff;
 }
+.ui-alert-buttons{
+    text-align:center;
+}
+.ui-alert-buttons button{
+    display:inline-block;
+    margin:4px 8px;
+    min-width:75px;
+}
 
 [ui-alert-order="0"]{}
 
