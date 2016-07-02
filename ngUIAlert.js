@@ -25,18 +25,14 @@
  *      
  */
 (function(){
-    var alertInstances = {}, UIAlertService, $animate, $timeout, NG_HIDE_CLASS;
+    var alertInstances = {}, UIAlertService, NG_HIDE_CLASS;
     
     NG_HIDE_CLASS = 'ui-alert-hide';
     
     angular.module('ngUIAlert', ['ngAnimate'])
-        .run(['$animate', '$timeout', function(animate, timeout){
-            $animate = animate;
-            $timeout = timeout;
-        }])
-        .service('UIAlert', function(){
-            return UIAlertService();
-        });
+        .service('UIAlert', ['$animate', '$timeout', function($animate, $timeout){
+            return UIAlertService($animate, $timeout);
+        }]);
 
     angular.element(document).on('keydown', function(event){
         var i, a, keyCode = event.which || event.keyCode;
@@ -51,7 +47,7 @@
         }
     });
     
-    UIAlertService = function(){
+    UIAlertService = function($animate, $timeout){
         var index = 0;
         
         return function(){
